@@ -1,7 +1,27 @@
+'use client'
+
 import Image from "next/image"
-import React from "react"
+import React, { useState } from "react"
+
+import Box from "@mui/material/Box"
+import Slider from "@mui/material/Slider"
 
 export const NodeProperties = () => {
+
+  const [sliderOne,setSlideOne] = useState(30)
+  const [sliderTwo,setSliderTwo] = useState(432)
+  const [sliderThree,setSliderThree] = useState(222)
+
+  const handleSliderOne = (event) => {
+    setSlideOne(event.target.value)
+  }
+  const handleSliderTwo = (event) => {
+    setSliderTwo(event.target.value)
+  }
+  const handleSliderThree = (event) => {
+    setSliderThree(event.target.value)
+  }
+
   return (
     <div className="flex h-full flex-col ">
       <div className="bg-[#39404B] rounded-t-xl relative pt-6">
@@ -72,7 +92,9 @@ export const NodeProperties = () => {
           <h1 className="text-[#D2D3DF] text-[16px] italic pl-6">Node Name</h1>
         </div>
         <div className="border rounded-lg h-[40px] border-[#39404B] flex items-center mt-3  ">
-          <h1 className="text-[#D2D3DF] text-[16px] italic pl-6">Dicta Amet Consequatur</h1>
+          <h1 className="text-[#D2D3DF] text-[16px] italic pl-6">
+            Dicta Amet Consequatur
+          </h1>
         </div>
         <div className="border rounded-lg h-[40px] border-[#39404B] flex items-center mt-3  ">
           <h1 className="text-[#D2D3DF] text-[16px] italic pl-6">Eos Et Rem</h1>
@@ -84,28 +106,77 @@ export const NodeProperties = () => {
             </h1>
           </div>
           <div className="border rounded-lg h-[40px] border-[#39404B] flex items-center mt-3 grow ">
-            <h1 className="text-[#D2D3DF] text-[16px] italic pl-6">
-              Rerum
-            </h1>
+            <h1 className="text-[#D2D3DF] text-[16px] italic pl-6">Rerum</h1>
           </div>
         </div>
         <div className="flex  justify-between items-center mt-5">
           <h1 className="pl-7">Sit Nihil Expedita</h1>
           <Image
-              src="/bodyIcons/image5.png"
-              alt="image1"
-              width={49}
-              height={312}
-              className="py-4"
-            />
+            src="/bodyIcons/image5.png"
+            alt="image1"
+            width={49}
+            height={312}
+            className="py-4"
+          />
         </div>
-        <div className="px-7">
+        <div className="pl-7 pr-3 mt-6 ">
           <div className="flex justify-between ">
             <h1>Earum Dolorem</h1>
-            <h1>54mbps</h1>
+            <h1>{sliderOne} mbps</h1>
           </div>
-          <div>
-          
+          <div className="pt-2">
+            <Box sx={{ width: 525 }}>
+              <Slider
+                aria-label="Temperature"
+                defaultValue={30}
+                // getAriaValueText={valuetext}
+                value={sliderOne}
+                color="primary"
+                onChange={handleSliderOne}
+                min={0}
+                max={500}
+              />
+            </Box>
+          </div>
+        </div>
+        <div className="pl-7 pr-3 mt-6 ">
+          <div className="flex justify-between ">
+            <h1>Earum Dolorem</h1>
+            <h1>{sliderTwo} mbps</h1>
+          </div>
+          <div className="pt-2">
+            <Box sx={{ width: 525 }}>
+              <Slider
+                aria-label="Temperature"
+                defaultValue={30}
+                // getAriaValueText={valuetext}
+                value={sliderTwo}
+                color="primary"
+                onChange={handleSliderTwo}
+                min={0}
+                max={500}
+              />
+            </Box>
+          </div>
+        </div>
+        <div className="pl-7 pr-3 mt-6 ">
+          <div className="flex justify-between ">
+            <h1>Earum Dolorem</h1>
+            <h1>{sliderThree} mbps</h1>
+          </div>
+          <div className="pt-2">
+            <Box sx={{ width: 525 }}>
+              <Slider
+                aria-label="Temperature"
+                defaultValue={30}
+                // getAriaValueText={valuetext}
+                value={sliderThree}
+                color="primary"
+                onChange={handleSliderThree}
+                min={0}
+                max={500}
+              />
+            </Box>
           </div>
         </div>
       </div>
