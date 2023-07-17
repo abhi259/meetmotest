@@ -25,3 +25,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.gradient-bg {
+  background: linear-gradient(to right, #4F46E5, #9966FF); /* Initial background gradient */
+}
+
+.gradient-hover-bg:hover {
+  background: linear-gradient(to right, #FF0080, #FF8C00); /* Hover background gradient */
+}
