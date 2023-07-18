@@ -6,12 +6,12 @@ import { Flow } from "./bodyCompoents/Flow"
 
 export const Body = () => {
   return (
-    <div className=" grow mx-[20px] mb-[20px] rounded-lg flex bg-[#303640]">
-      <div className=" grow rounded-xl flex flex-col ">
+    <div className=" grow mx-[20px] mb-[20px] rounded-lg flex bg-[#303640] relative">
+      <div className=" grow rounded-xl flex flex-col  max-w-[calc(100%-600px)]">
         <Tools />
         <Flow />
       </div>
-      <div className="w-[600px]">
+      <div className="w-[600px]  absolute right-0 bg-[#303640] h-[calc(100%-10px)] overflow-auto ">
         <NodeProperties />
       </div>
     </div>

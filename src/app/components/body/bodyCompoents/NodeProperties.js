@@ -23,7 +23,7 @@ export const NodeProperties = () => {
   }
 
   return (
-    <div className="flex h-full flex-col ">
+    <div className="flex  flex-col ">
       <div className="bg-[#39404B] rounded-t-xl relative pt-6">
         <div className="absolute right-2 top-2">
           <Image
@@ -49,7 +49,7 @@ export const NodeProperties = () => {
           />
         </div>
       </div>
-      <div className="bg-[#303640] grow relative m-5 flex flex-col ">
+      <div className="bg-[#303640]   relative m-5 flex flex-col ">
         <div className="absolute right-2 top-2">
           <Image
             src="/bodyIcons/handleIcon.png"
