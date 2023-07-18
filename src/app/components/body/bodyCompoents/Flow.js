@@ -79,7 +79,7 @@ export const Flow = () => {
         nodeTypes={nodeTypes}
         fitView
       >
-        <MiniMap style={minimapStyle} />
+        {/* <MiniMap style={minimapStyle} /> */}
         <Controls />
         <Background />
       </ReactFlow>
