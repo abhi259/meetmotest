@@ -15,7 +15,7 @@ export const TopNavabar = () => {
         </div>
         <div className="hover:bg-[#272C34] p-4 rounded-xl ">
           <Image
-            src="/topNavbarIcons/icon2.png "
+            src="/topNavbarIcons/icon7.png"
             alt="icon1"
             width={35}
             height={35}
