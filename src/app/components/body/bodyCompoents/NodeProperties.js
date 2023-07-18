@@ -23,7 +23,7 @@ export const NodeProperties = () => {
   }
 
   return (
-    <div className="flex  flex-col ">
+    <div className="flex  flex-col text-white">
       <div className="bg-[#39404B] rounded-t-xl relative pt-6">
         <div className="absolute right-2 top-2">
           <Image
