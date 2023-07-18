@@ -10,7 +10,7 @@ export const TopNavabar = () => {
             src="/topNavbarIcons/icon1.png"
             alt="icon1"
             width={35}
-            height={56}
+            height={35}
           />
         </div>
         <div className="hover:bg-[#272C34] p-4 rounded-xl ">
@@ -18,7 +18,7 @@ export const TopNavabar = () => {
             src="/topNavbarIcons/icon2.png "
             alt="icon1"
             width={35}
-            height={56}
+            height={35}
           />
         </div>
         <div className="  hover:bg-[#272C34] p-4 rounded-xl  ">
@@ -26,7 +26,7 @@ export const TopNavabar = () => {
             src="/topNavbarIcons/icon3.png"
             alt="icon1"
             width={35}
-            height={56}
+            height={35}
           />
         </div>
       </div>
